@@ -1,0 +1,189 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "mukta", sans-serif;
+    }
+
+    .logo {
+        width: 350px;
+        /*
+        height: 200px;
+      */
+    }
+
+    .mario-luigi {
+        width: 500px;
+        /*
+        height: 60%;
+      */
+    }
+
+    .box-info {
+        width: 40%;
+        /*
+        max-width: 40%;
+        */
+    }
+
+    button {
+        background-color: #c51111;
+        color: white;
+        width: 200px;
+        height: 50px;
+        border-radius: 3px;
+        border: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-top: 30px;
+        /*
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        text-align: center;
+        padding: 10px 0;
+      */
+
+    }
+
+    body {
+
+        height: 100vh;
+    }
+
+    .main-box {
+        align-items: center;
+        padding: 100px;
+        justify-content: space-around;
+        /*space-evenly*/
+        display: flex;
+        height: 100vh;
+    }
+
+    .box-video {
+        position: fixed;
+        z-index: -1;
+        /* position: fixed;
+        top: 0;*/
+        width: 100%;
+        height: 100vh;
+    }
+
+    video {
+        /*min-width: 100vw;
+        min-height: 100vh;*/
+        height: auto;
+        width: auto;
+        min-width: 100%;
+        max-width: 100%;
+        position: fixed;
+        top: 0;
+    }
+
+    .efeito-video {
+        background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        /*z-index: 2;*/
+    }
+
+    p {
+        color: white;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        /* ESPAÇAMENTO ENTRE OS ITENS*/
+        padding: 20px;
+    }
+
+    .header img {
+        height: 80px;
+        margin: 20px;
+    }
+
+    .header a {
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        text-decoration: none;
+
+    }
+
+    .header a:hover {
+        color: #c51111;
+        transition: 0.5s ease-in-out;
+        text-decoration: underline;
+    }
+
+
+    .img-zap {
+        position: fixed;
+        justify-content: end;
+        right: 13px;
+        bottom: 15px;
+        cursor: pointer;
+    }
+
+    .img-zap img {
+        width: 60px;
+        margin-right: 10px;
+    }
+
+    form {
+        background-color: white;
+
+        position: fixed;
+        top: 30%;
+        left: -340px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        z-index: 1;
+
+        padding: 20px;
+        border-radius: 10px;
+        width: 350px;
+        transition: 0.5s left ease-in-out;
+
+    }
+
+    form input {
+        height: 40px;
+        padding-left: 5px;
+        border-radius: 3px;
+        border: 1px solid grey;
+        outline-color: #18d80f;
+    }
+
+    form textarea {
+        padding-left: 5px;
+        border-radius: 3px;
+        border: 1px solid grey;
+        outline-color: #18d80f;
+        height: 150px;
+    }
+
+    .efeito-formulario {
+        height: 100vh;
+        width: 1000vw;
+        position: fixed;
+        top: 0;
+        background: linear-gradient(5deg, rgba(10, 12, 16, 0.99) 5%, rgba(10, 12, 16, 0.7) 10%, rgba(10, 12, 16, 0.99) 80%);
+        visibility: hidden;
+        transition: 0.5s visibility ease-in-out;
+        /* z-index: 3;
+        transition: visibility 1s linear;*/
+    }
+
+
+
+
+
