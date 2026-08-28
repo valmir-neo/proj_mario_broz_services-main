@@ -187,15 +187,7 @@
 
 
 
-
-
-
-
-/*
-
-    ESTILIZAÇÃO RESPONSIVO TESTE NA TORA
-
-    @media (max-width: 1100px) {
+     @media (max-width: 1100px) {
 
         body {
             height: 100vh;
@@ -209,11 +201,6 @@
             width: 50%;
             margin-left: 30px;
             gap: 20px;
-
-
-            /* - CONFIGURAÇÃO DA AULA
-            padding: 10px;
-            
         }
 
         .header img {
@@ -224,17 +211,12 @@
             margin-left: -16px;
             margin-bottom: 0;
 
-            /* - CONFIGURAÇÃO DA AULA 
-            padding: 10px;
-            width: 80px;
-            margin-right: 0px;
-            
         }
 
-         .header a {
+        .header a {
             font-size: 20px;
             font-weight: bolder;
-         }
+        }
 
         .main-box {
             flex-direction: column;
@@ -247,65 +229,22 @@
         }
 
         .box-info {
-
             width: 85%;
             margin-left: 15px;
-
-
-            /* - CONFIGURAÇÃO DA AULA
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
         }
-
-
 
         .mario-luigi {
-            /*
             padding: 45px;
             padding-left: 100px;
-            /*
-
-           /* - CONFIGURAÇÃO DA AULA
-            height: auto;
-            width: 80%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
         }
 
-        /*
-            MINHAS ALTERAÇÕES     
 
         form {
             width: 90%;
-        }        
-
-        button { 
-             margin: 7%; 
         }
-             
+
+        button {
+            margin: 7%;
+        }
+
     }
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*
-        - CONFIGURAÇÃO DA AULA
-         .header a {  
-            font-size: 16px;
-         }
-        */
