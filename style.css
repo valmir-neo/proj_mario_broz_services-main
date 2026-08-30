@@ -2,369 +2,118 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: "mukta", sans-serif;
+        font-family: sans-serif;
     }
 
-    body {
-
-        height: 100vh;
-        align-items: center;
-        min-height: 100vh;
-    }
-
-
-/*{
-.pai-flex {
-  display: flex;
-  justify-content: center; /* Centraliza na horizontal 
-  align-items: center;     /* Centraliza na vertical 
-
-  min-height: 100vh;       /* Garante que o pai (DE TODOS), ocupe a altura toda da tela 
-}
-
-.container-filho {
-  width: 100%;             /* Ocupa a largura disponível 
-  max-width: 1200px;       /* Define um limite máximo de largura 
-  padding: 20px;           /* Espaçamento interno para não colar nas bordas 
-}
-
-    -   OBS: A PAGINA CONTEM 2 CONTEINERS PRINCIPAIS, O 1° É O HEADER E O 2° É O MAIN, AMBOS SÃO FLEX, 
-             ELES ESTÃO DENTRO DE UM PAI FLEX, QUE OCUPA A ALTURA TODA DA TELA, E CENTRALIZA OS CONTAINERS 
-             NA HORIZONTAL(justify-content) E NA VERTICAL(align-items). 
-             OS CONTAINERS TEM UMA LARGURA MAXIMA DE 1200PX, 
-             E OCUPAM A LARGURA DISPONIVEL ATÉ ESSE LIMITE. OS CONTAINERS TEM UM PADDING DE 20PX 
-             PARA NÃO COLAR NAS BORDAS.
-
-
-*/
-
-
-    .header-box /* 1° CONTAINER PRINCIPAL DA PAGINA */
-        {
-
-        display: flex;
-        align-items: center;
-        gap: 30px; /* ESPAÇAMENTO ENTRE OS ITENS */
-        padding: 20px;
-        width: 100%;
+    /* Estilo do Topo da Navbar */
+    .navbar {
+        background-color: #1a1a1a;
+        color: #fff;
         position: fixed;
-    
-
-/*          
-        display: flex;
-        align-items: center;
-        gap: 30px; /* ESPAÇAMENTO ENTRE OS ITENS *
-        padding: 20px;
+        top: 0;
+        left: 0;
         width: 100%;
+        z-index: 1000;
+    }
+
+    .header-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         max-width: 1200px;
-*/
-   }
+        margin: 0 auto;
+        padding: 20px;
+    }
 
     .header-box img {
-        height: 80px;
-        margin: 20px;
+        /*IMAGEM*/
+
+        width: 80px;
     }
 
-    .header-box a {
-        color: white;
-        font-size: 24px;
-        cursor: pointer;
-        text-decoration: none;
-
-    }
-
-    .header-box a:hover {
-        color: #c51111;
-        transition: 0.5s ease-in-out;
-        text-decoration: underline;
-    }
-
-
-
-
-
-    .main-box /* 2° CONTAINER PRINCIPAL DA PAGINA */
-        {
+    /* Links para Computador */
+    .nav-links {
         display: flex;
-        justify-content: center; /* Centraliza na horizontal */
-        align-items: center;     /* Centraliza na vertical */
-        min-height: 100vh;   
-        gap: 200px;    /* Garante que o pai ocupe a altura toda da tela */
-        }
-
-        
-
-    .box-info {
-        display: grid;
-        width: 40%;
-        row-gap: 40px;
-        margin-top: 75px;
-    }
-
-    .logo /*IMAGEM*/
-        {
-
-        width: 350px;
-    }
-
-
-    p {
-        color: white;
-        font-size: 20px;
-        text-align: justify;
-    }
-
-    button {
-        background-color: #c51111;
-        color: white;
-        width: 200px;
-        height: 50px;
-        border-radius: 3px;
-        border: none;
-        font-weight: bold;
-        text-transform: uppercase;
-        cursor: pointer;
-        margin-top: 30px;
-
-    }
-
-    .mario-luigi
-
-    /*IMAGEM*/
-        {
-
-        width: 500px;
-    }
-
-
-
-
-
-
-
-    .box-video {
-        position: fixed;
-        z-index: -1;
-        /* position: fixed;
-        top: 0;*/
-        width: 100vw;
-        height: 100vh;
-    }
-
-    video {
-        /*min-width: 100vw;
-        min-height: 100vh;*/
-        height: auto;
-        width: auto;
-        min-width: 100vw;
-        max-width: 100vw;
-        position: fixed;
-        top: 0;
-    }
-
-    .efeito-video {
-        background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        /*z-index: 2;*/
-    }
-
-
-
-
-
-
-    .img-zap {
-        position: fixed;
-        justify-content: end;
-        right: 13px;
-        bottom: 15px;
-        cursor: pointer;
-    }
-
-    .img-zap img {
-        width: 60px;
-        margin-right: 10px;
-    }
-
-
-
-
-
-
-
-    form {
-        background-color: white;
-
-        position: fixed;
-        top: 30%;
-        left: -340px;
-
-        display: flex;
-        flex-direction: column;
+        list-style: none;
         gap: 20px;
-        z-index: 1;
-
-        padding: 20px;
-        border-radius: 10px;
-        width: 350px;
-        transition: 0.5s left ease-in-out;
-
     }
 
-    form input {
-        height: 40px;
-        padding-left: 5px;
-        border-radius: 3px;
-        border: 1px solid grey;
-        outline-color: #18d80f;
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s;
+
+        .nav-links a :hover {
+            color: #c51111;
+            transition: 0.5s ease-in-out;
+            text-decoration: underline;
+        }
     }
 
-    form textarea {
-        padding-left: 5px;
-        border-radius: 3px;
-        border: 1px solid grey;
-        outline-color: #18d80f;
-        height: 150px;
+    .nav-links a:hover {
+        color: #00adb5;
+        /* Cor de destaque ao passar o mouse */
     }
 
-    .efeito-formulario {
-        height: 100vh;
-        width: 100vw;
-        position: fixed;
-        top: 0;
-        background: linear-gradient(5deg, rgba(10, 12, 16, 0.99) 5%, rgba(10, 12, 16, 0.7) 10%, rgba(10, 12, 16, 0.99) 80%);
-        visibility: hidden;
-        transition: 0.5s visibility ease-in-out;
-        /* z-index: 3;
-        transition: visibility 1s linear;*/
+    /* Esconder o checkbox e o botão sanduíche por padrão (Computador) */
+    .menu-checkbox {
+        display: none;
+    }
+
+    .menu-sanduiche {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .menu-sanduiche span {
+        background-color: #fff;
+        height: 3px;
+        width: 25px;
+        border-radius: 2px;
     }
 
 
-    @media screen and (max-width: 768px) {}
 
 
 
+    @media (max-width: 768px) {
+        /* Mostra o ícone do menu sanduíche */
 
+        .header-box img {
+            /*IMAGEM*/
 
-
-    /*
-
-    ESTILIZAÇÃO RESPONSIVO TESTE NA TORA
-
-    @media (max-width: 1100px) {
-
-        body {
-            height: 100vh;
-            width: 100vw;
-        }
-
-        .header {
-
-            padding: 35px;
-            flex-wrap: wrap;
-            width: 50%;
-            margin-left: 30px;
-            gap: 20px;
-
-
-            /* - CONFIGURAÇÃO DA AULA
-            padding: 10px;
-            
-        }
-
-        .header img {
-
-            padding: 10px;
-            width: 80px;
-            padding-left: 15px;
-            margin-left: -16px;
-            margin-bottom: 0;
-
-            /* - CONFIGURAÇÃO DA AULA 
-            padding: 10px;
-            width: 80px;
-            margin-right: 0px;
-            
-        }
-
-         .header a {
-            font-size: 20px;
-            font-weight: bolder;
-         }
-
-        .main-box {
-            flex-direction: column;
-            padding: 30px;
-            width: 100vw;
-        }
-
-        .logo {
-            padding-right: 50px;
-        }
-
-        .box-info {
-
-            width: 85%;
+            width: 50px;
             margin-left: 15px;
 
+        }
 
-            /* - CONFIGURAÇÃO DA AULA
+        .menu-sanduiche {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-
+            margin-right: 20px;
         }
 
+        /* Transforma a lista de links em um menu vertical escondido */
+        .nav-links {
+            display: none;
+            /* Esconde os links por padrão no celular */
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            /* Fica logo abaixo da barra do topo */
+            left: 0;
+            width: 100%;
+            background-color: #1a1a1a;
+            padding: 20px;
+            gap: 15px;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
 
-
-        .mario-luigi {
-            /*
-            padding: 45px;
-            padding-left: 100px;
-            /*
-
-           /* - CONFIGURAÇÃO DA AULA
-            height: auto;
-            width: 80%;
+        /* O TRUQUE: Quando o checkbox for marcado, mostra os links */
+        .menu-checkbox:checked~.nav-links {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-
         }
-
-        /*
-            MINHAS ALTERAÇÕES     
-
-        form {
-            width: 90%;
-        }        
-
-        button { 
-             margin: 7%; 
-        }
-             
     }
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*
-        - CONFIGURAÇÃO DA AULA
-         .header a {  
-            font-size: 16px;
-         }
-        */
