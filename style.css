@@ -27,7 +27,6 @@
 
     .header-box img {
         /*IMAGEM*/
-
         width: 80px;
     }
 
@@ -44,16 +43,11 @@
         font-size: 16px;
         transition: color 0.3s;
 
-        .nav-links a :hover {
-            color: #c51111;
-            transition: 0.5s ease-in-out;
-            text-decoration: underline;
-        }
-    }
-
     .nav-links a:hover {
-        color: #00adb5;
-        /* Cor de destaque ao passar o mouse */
+        color: #c51111;
+        transition: 0.5s ease-in-out;
+        text-decoration: underline;
+        }
     }
 
     /* Esconder o checkbox e o botão sanduíche por padrão (Computador) */
@@ -84,7 +78,6 @@
 
         .header-box img {
             /*IMAGEM*/
-
             width: 50px;
             margin-left: 15px;
 
@@ -109,7 +102,7 @@
             padding: 20px;
             gap: 15px;
             text-align: center;
-            border-top: 1px solid #333;
+            border-top: 1px solid #c51111;
         }
 
         /* O TRUQUE: Quando o checkbox for marcado, mostra os links */
