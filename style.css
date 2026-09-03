@@ -5,24 +5,27 @@
         font-family: sans-serif;
     }
 
+
+
     /* Estilo do Topo da Navbar */
     .navbar {
-        background-color: #1a1a1a;
+        background-color: #1a1a1a; /* A RESOLVER > PROVAVELMENTE IRA PARA O MEDIA QUERIE */ 
         color: #fff;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 1000;
+    /*  z-index: 1000;   */
+       
     }
 
     .header-box {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         max-width: 1200px;
         margin: 0 auto;
         padding: 20px;
+        gap: 30px;
     }
 
     .header-box img {
@@ -73,8 +76,12 @@
 
 
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         /* Mostra o ícone do menu sanduíche */
+
+        .header-box {
+            justify-content: space-between;
+        }
 
         .header-box img {
             /*IMAGEM*/
