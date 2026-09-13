@@ -223,9 +223,6 @@
     @media screen and (max-width: 768px) {
         /* Mostra o ícone do menu sanduíche */
 
-        .navbar {
-            background-color: #1a1a1a;
-        }
 
         .header-box {
             justify-content: space-between;
