@@ -31,6 +31,7 @@
     .header-box img {
         /*IMAGEM*/
         width: 80px;
+        margin: 20px;
     }
 
     /* Links para Computador */
@@ -43,7 +44,8 @@
     .nav-links a {
         color: #fff;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 24px;
+        cursor: pointer;
         transition: color 0.3s;
 
     .nav-links a:hover {
@@ -76,8 +78,36 @@
 
 
 
+    .main-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100vh;
+        gap: 200px;
+    }
 
+    .logo-info-img {
+        width: 350px;
+        height: 200px;
+    }
 
+    .box-info {
+        display: grid;
+        width: 40%;
+        row-gap: 40px;
+        margin-top: 110px;
+    }
+
+    .mario-luigi-img {
+            width: 500px;
+            height: 60%;
+    }
+
+    p {
+        color: white;
+        font-size: 20px;
+        text-align: justify;
+    }
 
 
 
