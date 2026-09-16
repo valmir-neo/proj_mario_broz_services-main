@@ -9,16 +9,30 @@
 </head>
 
 <body>
-    <div class="header">
-        <img src="./assets/logo-header.png" alt="logo-header">
-        <a>Home</a>
-        <a class="link-form" onclick="mostrarform()">Fale Conosco</a>
-        <a href="./servicos.html" target="_blank" rel="noopener noreferrer">Nossos Serviços</a>
-    </div>
+    <nav class="navbar">
+        <div class="header-box">
+
+            <img src="./assets/logo-header.png" alt="logo-header">
+
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+            <label for="menu-toggle" class="menu-sanduiche">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="./index.html" target="_blank" rel="noopener noreferrer">Home</a></li>
+                <li><a class="link-form" onclick="mostrarform()">Fale Conosco</a></li>
+                <li><a href="./servicos.html" target="_blank" rel="noopener noreferrer">Nossos Serviços</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="main-box">
         <div class="box-info">
-            <img src="./assets/logo.png" alt="logo-site-mario" class="logo" />
+            <img src="./assets/logo.png" alt="logo-site-mario" class="logo-info-img" />
 
             <P>
                 🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo! 🔧
@@ -34,28 +48,31 @@
         </div>
 
         <div>
-            <img src="./assets/mario.png" alt="logo-mario-luigi" class="mario-luigi" />
+            <img src="./assets/mario.png" alt="logo-mario-luigi" class="mario-luigi-img" />
         </div>
-    </div>
 
-    <div class="box-video">
-        <video src="./assets/video.mp4" autoplay loop muted></video>
-        <div class="efeito-video"></div>
-    </div>
 
-    <div class="img-zap">
-        <a href="https://w.app/dzwlhp" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/whatsapp.png" alt="imagem-link-whatsapp">
-        </a>
-    </div>
+        <div class="box-video">
+            <video src="./assets/video.mp4" autoplay loop muted></video>
+            <div class="efeito-video"></div>
+        </div>
 
-    <form class="formulario" action="https://formcarry.com/s/O1sfKFpKQzb" method="POST" enctype="multipart/form-data">
-        <input placeholder="Digite Seu Nome" type="text" name="Nome"/>
-        <input placeholder="Digite Seu Telefone (DDD) + numero" type="tel" name="Telefone">
-        <input placeholder="Digite Seu E-mail" type="email" name="email"/>
-        <textarea placeholder="Digite seu Problema Aqui..." name="Problema"></textarea>
-        <button type="submit" target="_blank">Pedir Orçamento</button>
-    </form>
+        <div class="img-zap">
+            <a href="https://w.app/dzwlhp" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/whatsapp.png" alt="imagem-link-whatsapp">
+            </a>
+        </div>
+
+        <form class="formulario" action="https://formcarry.com/s/O1sfKFpKQzb" method="POST"
+            enctype="multipart/form-data">
+            <input placeholder="Digite Seu Nome" type="text" name="Nome" />
+            <input placeholder="Digite Seu Telefone (DDD) + numero" type="tel" name="Telefone">
+            <input placeholder="Digite Seu E-mail" type="email" name="email" />
+            <textarea placeholder="Digite seu Problema Aqui..." name="Problema"></textarea>
+            <button type="submit" target="_blank">Pedir Orçamento</button>
+        </form>
+
+    </div>
 
     <div onclick="esconderform()" class="efeito-formulario"></div>
 
