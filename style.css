@@ -24,6 +24,7 @@
     .header-box {
         display: flex;
         align-items: center;
+        justify-content: center;
         margin: 0 auto;
         padding: 10px;
         gap: 20px;
@@ -40,14 +41,14 @@
     .nav-links {
         display: flex;
         list-style: none;
-        gap: 50px;
+        gap: 40px;
         margin-top: 10px;
     }
 
     .nav-links a {
         color: #fff;
         text-decoration: none;
-        font-size: 24px;
+        font-size: 22px;
         cursor: pointer;
         transition: color 0.3s;
 
@@ -84,7 +85,6 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;   
-        height: 100vh;
         /* justify-content: space-around;*/
     }
 
