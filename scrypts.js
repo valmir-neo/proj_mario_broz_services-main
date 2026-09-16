@@ -29,7 +29,7 @@ function mostrarform() {
 }
 
 function esconderform() {
-    formulario.style.left = "-340px";
+    formulario.style.left = "-335px";
     formulario.style.transform = "translate(0)";
     efeitoform.style.visibility = "hidden";
 }
