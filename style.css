@@ -187,14 +187,13 @@
         padding: 20px;
         border-radius: 10px;
         gap: 20px;
-        left: -340px;
-        transition: left 1s linear;
-        z-index: 4;
-    /*  
-        width: 350px;
+        left: -335px;
+        /* transition: left 1s linear; */
+        z-index: 3;
         transition: 0.5s left ease-in-out;
-        top: 30%; 
-    */
+        top: 20%; 
+        transform: translateX(0);
+    
     }
 
     input {
@@ -217,21 +216,26 @@
 
     .efeito-formulario {
         visibility: hidden;
-        transition: visibility 1s linear; 
-        z-index: 3; 
+        transition: 0.5s visibility ease-in-out;
+        z-index: 1; 
         position: fixed;     
         height: 100vh;
         width: 1000vw;
-        background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
-        
+        background: linear-gradient(350deg, rgba(10, 12, 16, 0.99) 20%, rgba(10, 12, 16, 0.7) 100%, rgba(10, 12, 16, 0.99) 80%);
+        top: 0;
+        }
+
+
     /*
         ESTILIZAÇÃO ANTERIOR MINHA:
-        top: 0;
-        background: linear-gradient(5deg, rgba(10, 12, 16, 0.99) 5%, rgba(10, 12, 16, 0.7) 10%, rgba(10, 12, 16, 0.99) 80%);
+        transition: visibility 1s linear; 
         transition: 0.5s visibility ease-in-out;
+        z-index: 1; 
+        background: linear-gradient(5deg, rgba(10, 12, 16, 0.99) 5%, rgba(10, 12, 16, 0.7) 10%, rgba(10, 12, 16, 0.99) 80%);
+        
     */
         
-    }
+    
     
 
 
